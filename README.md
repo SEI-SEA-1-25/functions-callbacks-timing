@@ -36,7 +36,7 @@ sayHello() // logs hi, I'm a function
 ## Global and Local Scope
 ___
 
-Variables declared outside of a function are in the *global scope* -- **everyone has access to them**. Variables declared with `let` inside functions are in the *local scope* of that function -- **nobody has access to them outside of the function**
+Variables declared outside of a function are in the *global scope* -- **everyone has access to them**. Variables declared with `let` or `const` inside functions are in the *local scope* of that function -- **nobody has access to them outside of the function**
 
 ```javascript 
 // declare a variable in the global scope and assign it a string value

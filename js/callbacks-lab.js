@@ -32,8 +32,8 @@ function isEven(number) {
 const clampCheck = clamp(-45, 0, 100) // will return 0
 const isEvenCheck = isEven(3) // will return false
 
-console.log(clampCheck)
-console.log(isEvenCheck)
+// console.log(clampCheck) // Uncomment me to check the output!
+// console.log(isEvenCheck) // Uncomment me to check the output!
 
 /*  //  //  //  //  //  //  //  //
 3.
@@ -51,7 +51,7 @@ function subtractOne(number) {
 
 let numberAndCallbackCheck = numberAndCallback(10, subtractOne) //output 9
 
-console.log(numberAndCallbackCheck)
+// console.log(numberAndCallbackCheck) // Uncomment me to check the output!
 
 /*  //  //  //  //  //  //  //  //
 4.

@@ -1,5 +1,5 @@
 // 1.
-// Write a function that prints the title of your favorite movie. Save it to a variable called printFavoriteMovie, then invoke it.
+// Write a function that prints the title of your favorite movie. Save it to a variable called printFavoriteMovie
 
 // 2.
 // Write a function that prints the numbers between 1 and 5 (inclusive), each on their own line. (You could hardcode 5 print statements, but wouldn't it be nicer to use a for loop?) Save it to a variable called countToFive. Then invoke it.

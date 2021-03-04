@@ -87,6 +87,7 @@ console.log(`firstAdd is: ${firstAdd} and secondAdd is ${secondAdd}`)
 
 ## Mini-lab!
 Go to `functions-lab.js` and tackle questions 7 - 9!
+*NOTE* that this section uses a test suite! That's because functions with return values can be tested, but functions that console.log without returning anything can't be tested.
 
 ## Callback Functions
 
@@ -148,7 +149,7 @@ setTimeout(stopClock, 5000) // clear the clock interval in 5 seconds
 ```
 
 ## Mini-lab!
-Go to `callbacks-lab.js` and tackle questions 1 - 4!
+Go to `callbacks-lab.js` and tackle questions 1 - 4! *NOTE* that there's no test suite for these functions, why not?
 
 
 ## Global and Local Scope

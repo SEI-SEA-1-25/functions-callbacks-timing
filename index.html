@@ -2,11 +2,38 @@
 <html>
   <head>
     <title>JS Functions, Callbacks and Timing Functions</title>
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
   </head>
   <body>
-    Open your browser console with F12!
+    <div id="mocha"></div>
+    
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup('bdd');
+      mocha.checkLeaks();
+    </script>
+
     <script src="./js/code-along.js" async defer></script>
     <script src="./js/functions-lab.js" async defer></script>
     <script src="./js/callbacks-lab.js" async defer></script>
+    <script src="./js/test.js" async defer></script>
+    
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
   </body>
 </html>
+
+
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mocha Tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+
+</body>

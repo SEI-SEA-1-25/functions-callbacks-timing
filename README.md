@@ -5,7 +5,7 @@ ___
 
 * Declare and invoke functions
 * Use functions that accept parameters and return values
-* Explore callback functions by using `setTimeout` and `setInterval`
+* Explore callback functions by using javascript's built-in timing functions
 * Understand variable scoping
 
 ## Defining a Named Function

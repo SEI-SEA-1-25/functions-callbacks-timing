@@ -28,11 +28,10 @@
 // example input: 3, 15
 // output: 15
 
+
 // 8. write a function called addExcitement that accepts a string as a parameter. It should return a version of that string that is all uppercase, and has 3 exclamation points on the end. Invoke this function, save the result as a variable, and print the variable.
 
 // 9. 
 // write a function called findMax that accepts an array of numbers as a parameter, loops over the array, finds the largest of all the values in the array and returns it
 // invoke the function and assign its return to a new variable
 // print the variable
-
-

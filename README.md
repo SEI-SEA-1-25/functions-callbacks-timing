@@ -3,11 +3,10 @@
 ## Learning Objectives
 ___
 
-* Use functions that manipulate global variables  
+* Declare and invoke functions
 * Use functions that accept parameters and return values
-* Assign an anonymous function to a variable
-* Pass a callback function to a higher order function as a parameter and invoke it
-* Pass a callback function to a timing function and manipulate global variables
+* Explore callback functions by using `setTimeout` and `setInterval`
+* Understand variable scoping
 
 ## Defining a Named Function
 ___

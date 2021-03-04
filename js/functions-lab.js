@@ -1,63 +1,38 @@
-/*  //  //  //  //  //  //  //  //
-1.
-declare a variable in the global scope and assign it a value of 'Hello' 
-write a function that concatenates the string ' World' with the variable 
-invoke the function
-log the variable's value after you invoke the function 
-*/  //  //  //  //  //  //  //  //
+// 1.
+// Write a function that prints the title of your favorite movie. Save it to a variable called printFavoriteMovie, then invoke it.
 
-/*  //  //  //  //  //  //  //  //
-2. 
-write a function that assigns a numerical value to number1 and number2
-write a second function that multiplies number1 by number2 and assigns the product to the variable result
-write a third function that prints result's value in the console
-invoke the three functions in order
-*/  //  //  //  //  //  //  //  //
+// 2.
+// Write a function that prints the numbers between 1 and 5 (inclusive), each on their own line. (You could hardcode 5 print statements, but wouldn't it be nicer to use a for loop?) Save it to a variable called countToFive. Then invoke it.
 
-let number1
-let number2
-let result
+// 3.
+// Declare a variable (outside of any function) called isHavingFun, and give it a boolean value. Then write a function called funOrNoFun, that prints an upbeat and exciting message if isHavingFun is true, and a real bummer message if isHavingFun is false.
 
-/*  //  //  //  //  //  //  //  //
-3. 
-write a function that accepts a number as a parameter, squares it (multiplies it by itself) and returns the square
-invoke the function and assign its return to a new variable
-print the variable
-*/  //  //  //  //  //  //  //  //
+// 4.
+// Write a function called sayHelloTo that takes a string as a parameter. It should print out "Why hello there, <name>!", where <name> is the value of the name parameter. Invoke this function a few times, with a different name each time
 
-/*  //  //  //  //  //  //  //  //
-4. 
-write a function that accepts two integers as parameters
-convert the two integers to strings and concatenate them, return the result
-invoke the function and assign its return to a new variable
-print the variable
-example input: 5, 4
-output: "54"
-example input: 67, 1
-output: "671"
-*/  //  //  //  //  //  //  //  //
+// 3. 
+// write a function that accepts a number as a parameter, squares it (multiplies it by itself), and prints the result. Invoke it with a few different numbers to see some differing results
 
-/*  //  //  //  //  //  //  //  //
-5. 
-write a function that accepts two numbers as parameters, compares them and returns the number that is larger
-invoke the function and assign its return to a new variable
-print the variable
-example input: 3, 15
-output: 15
-*/  //  //  //  //  //  //  //  //
+// 6. 
+// Write a function called concatenateNumbers that accepts two integers as parameters, converts the two integers to strings and concatenates them, and print the result
+// example input: 5, 4
+// output: "54"
+// example input: 67, 1
+// output: "671"
 
 
-/*  //  //  //  //  //  //  //  //
-6. 
-create an object with several key: value pairs and assign it to a variable
-write a function that accept an object as an parameter, loop over the object and print out the value of every key
-*/  //  //  //  //  //  //  //  //
+// 7. 
+// write a function called findLarger that accepts two numbers as parameters, compares them and returns the number that is larger
+// invoke the function and assign its return to a new variable
+// print the variable
+// example input: 3, 15
+// output: 15
 
+// 8. write a function called addExcitement that accepts a string as a parameter. It should return a version of that string that is all uppercase, and has 3 exclamation points on the end. Invoke this function, save the result as a variable, and print the variable.
 
-/*  //  //  //  //  //  //  //  //
-7. 
-write a function that accepts an array of numbers as a parameter, loops over the array and finds the average of all the values in the array and returns it
-invoke the function and assign its return to a new variable
-print the variable
-*/  //  //  //  //  //  //  //  //
+// 9. 
+// write a function called findMax that accepts an array of numbers as a parameter, loops over the array, finds the largest of all the values in the array and returns it
+// invoke the function and assign its return to a new variable
+// print the variable
+
 

@@ -12,76 +12,40 @@ ___
 ## Defining a Named Function
 ___
 
-A function is like a container of code, you can put your code inside of it and save it for later when you need to use it. Functions are useful for storing code that you might need to use over and over in different places, allowing you to write *DRY code*.
+A function is like a container of code, you can put your code inside of it and save it for later when you need to use it. Functions are useful for storing code that you might need to use over and over in different places, allowing you to write *DRY (Don't Repeat Yourself) code*.
 
-To *declare* a *named function*, you start with the `function` keyword followed by the name you want to *invoke* it with later to run the code inside.
-
+Here's the syntax to create a function. Just like strings, numbers, arrays, etc., we have to save our function to a variable in order to reference it later:
 ```javascript
 // define a function named 'sayHello' that introduces itself with a console log
-function sayHello() {
+const sayHello = () => {
   // code inside here doesn't run until sayHello() is invoked
   console.log("hi, I'm a function")
 }
 ```
-
-The parenthesis `()` after the name are always needed, even if they are empty, and all the code between the curly bois `{ }` will run when the function is invoked.
-
-The code inside the function won't run until the function is *invoked* with the function's name followed by parenthesis:
+All the code between the curly bois `{ }` won't run until the function is *invoked* Invokation is done with the function's name followed by parenthesis:
 
 ```javascript
 // invoke the function sayHello
 sayHello() // logs hi, I'm a function
 ```
 
-## Global and Local Scope
-___
-
-Variables declared outside of a function are in the *global scope* -- **everyone has access to them**. Variables declared with `let` inside functions are in the *local scope* of that function -- **nobody has access to them outside of the function**
-
-```javascript 
-// declare a variable in the global scope and assign it a string value
-let globalVariable = "Everyone can access me, I'm a variable in the global scope!"
-
-// declare a function named 'sharingIsCaring' that prints globalVariable
-function sharingIsCaring() {
-  console.log(`sharingIsCaring() logs: ${globalVariable}`)
-}
-
-  // declare a function named 'workingTogether' that prints globalVariable
-function workingTogether() {
-  console.log(`workingTogether() logs: ${globalVariable}`)
-}
-
-sharingIsCaring() 
-workingTogether()
-```
-
-Trying to access a variable that has been declared in a *local scope* from some where else will throw an error:
-
-```javascript
-// declare a function named 'selfish'
-function selfish() {
-  // declare a locally scoped variable named 'mineAllMine'
-  let mineAllMine = "nobody else can get me"
-}
-
-console.log(mineAllMine) // will throw an error
-```
+## Mini-lab!
+Go to `functions-lab.js` and tackle questions 1 - 3!
 
 ## Supplying Function Parameters 
 ___
 
-Functions can be given *parameters* when the are *invoked*, and they will use the parameters when they run their code. *NOTE function parameters are often called **function arguments** as well*. The parameters are named like variables when the function is *declared*.
+When we define a function, we can declare that it needs to be given *parameters* to run. A parameter is like a placeholder where a real value will go when the function gets invoked. When we invoke the function, we supply *arguments* to fill those parameter slots. 
 
 ```javascript
-// declare a function that accepts two arguments that are numbers, adds them, and logs the sum
-function addTwoNumbers(number1, number2) {
+// declare a function that accepts two parametera that are numbers, adds them, and logs the sum
+const addTwoNumbers = (number1, number2) => {
   // add the arguments together in a local variable
   let sum = number1 + number2
   console.log(`${number1} plus ${number2} is ${sum}`)
 }
 
-// invoke the functions
+// invoke the functions with arguments
 addTwoNumbers(5, 10) // 15
 addTwoNumbers(3, 3) // 6
 
@@ -90,8 +54,10 @@ let nine = 9
 let seven = 7
 
 addTwoNumbers(nine, seven)
-
 ```
+
+## Mini-lab!
+Go to `functions-lab.js` and tackle questions 4 - 6!
 
 ## Returning Values From Functions
 ---
@@ -100,7 +66,7 @@ If *parameters* are the entrance to a function, then its *return* is the exit. A
 
 ```javascript
 // declare a function that accepts two arguments that are numbers, adds them, and returns the sum
-function addTwoAndReturn(number1, number2) {
+const addTwoAndReturn = (number1, number2) => {
   // log the values passed as parameters
   console.log(`thanks for ${number1} and ${number2}!`)
   // add the arguments together
@@ -120,52 +86,12 @@ let secondAdd = addTwoAndReturn(12, 8) // set secondAdd to 20
 console.log(`firstAdd is: ${firstAdd} and secondAdd is ${secondAdd}`)
 ```
 
-**check out the exercises in ./js/functions-lab.js**
-
-
-## Anonymous Functions
----
-
-In javascript, functions are called *first class*. That means they are just like any other datatype, they can:
-
-* be stored them in variable
-* **passed as arguments to other functions**
-* created within functions
-* returned from functions
-
-Instead of creating a named function, lets make an anonymous function and assign it to a constant:
-
-```javascript 
-// declare a global constant named 'anon' and assign it a value of an anonymous function
-const anon = function() {
-  console.log("I prefer the privacy of anonymity")
-}
-```
-
-*Arrow functions* are another type of anonymous function, and are written with a fat arrow `=>` instead on the keyword function: 
-
-```javascript
-// declare a global constant named 'arrow' and assign it a value of an anonymous arrow function
-const arrow = () => {
-  console.log("I'm an arrow function 🏹")
-}
-```
-
-Parameters are passed to arrow functions between the parentheses like a named function:
-
-```javascript
-// declare a global constant named 'arrowAdd' and assign it a value of an arrow function that accepts
-// two numbers as parameters and returns their sum
-const arrowAdd = (number1, number2) => {
-  return number1 + number2
-}
-
-// invoke arrowAdd and assign the return value to a variable
-let arrowSum = arrowAdd(10, 20)
-console.log(arrowSum)
-```
+## Mini-lab!
+Go to `functions-lab.js` and tackle questions 7 - 9!
 
 ## Callback Functions
+
+*NOTE*: callbacks will probably not make sense until you get to the next section, Timing Functions. This is ok.
 
 *Callback functions* are passed to another function's parameters. Make sure not to use the `()` when passing the callback, overwise javascript will *invoke* it right away! A function that receives a *callback* as on of its parameters is called a *higher order function*.`
 
@@ -188,28 +114,8 @@ what happens if you invoke `callback()` when you pass it to higher order?
 higherOrder(callback())
 ```
 
-*callbacks* can interact with the parameters they are pass along with!
+*callbacks* can also be declared *inline* straight into the function parameters when you are invoking the *higher order* function.
 
-```javascript
-// take two numbers and a function, return the result of the function's operation on the numbers
-const doCalculation = (num1, num2, func) => {
-  return func(num1, num2)
-}
-
-let funception = doCalculation(50, 100, arrowAdd) // add 50 and 100 together with arrowAdd
-
-console.log(funception) // 150
-```
-
-*callbacks* can also be declared *inline* straight into the function parameters when you are invoking the *higher order* function:
-
-```javascript
-let funceptionInline = doCalculation(50, 100, (number1, number2) => {
-  return number1 - number2
-})
-
-console.log(funceptionInline)
-```
 
 ## Timing Functions
 ---
@@ -217,7 +123,6 @@ console.log(funceptionInline)
 Javascript has two important built-in functions used for timing of events: `setInteraval()` and `setTimeout()`. Both accept a callback function and an how long to wait (in milliseconds) before invoking the callback. `setInterval()` invokes the callback over and over, and `setTimeout()` invokes it just once.
 
 ```javascript
-
 const justOnce = () => {
   console.log('I will only print once!')
 }
@@ -243,4 +148,41 @@ const stopClock = () => {
 setTimeout(stopClock, 5000) // clear the clock interval in 5 seconds
 ```
 
-**check out the exercises in ./js/callbacks-lab.js**
+## Mini-lab!
+Go to `callbacks-lab.js` and tackle questions 1 - 4!
+
+
+## Global and Local Scope
+___
+
+Variables declared outside of a function are in the *global scope* -- **everyone has access to them**. Variables declared with `let` inside functions are in the *local scope* of that function -- **nobody has access to them outside of the function**
+
+```javascript 
+// declare a variable in the global scope and assign it a string value
+let globalVariable = "Everyone can access me, I'm a variable in the global scope!"
+
+// declare a function named 'sharingIsCaring' that prints globalVariable
+const sharingIsCaring = () => {
+  console.log(`sharingIsCaring() logs: ${globalVariable}`)
+}
+
+  // declare a function named 'workingTogether' that prints globalVariable
+const workingTogether = () => {
+  console.log(`workingTogether() logs: ${globalVariable}`)
+}
+
+sharingIsCaring() 
+workingTogether()
+```
+
+Trying to access a variable that has been declared in a *local scope* from some where else will throw an error:
+
+```javascript
+// declare a function named 'selfish'
+const selfish = () => {
+  // declare a locally scoped variable named 'mineAllMine'
+  let mineAllMine = "nobody else can get me"
+}
+
+console.log(mineAllMine) // will throw an error
+```

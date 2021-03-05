@@ -29,7 +29,7 @@ sayHello() // logs hi, I'm a function
 ```
 
 ## Mini-lab!
-Go to `functions-lab.js` and tackle questions 1 - 3!
+Go to `functions-lab.js` and tackle questions 1 - 3! These questions are not related to the tests in the browswer, just observe the console in your dev tools.
 
 ## Supplying Function Parameters 
 ___
@@ -56,7 +56,7 @@ addTwoNumbers(nine, seven)
 ```
 
 ## Mini-lab!
-Go to `functions-lab.js` and tackle questions 4 - 6!
+Go to `functions-lab.js` and tackle questions 4 - 6! These questions are not related to the tests in the browswer, just observe the console in your dev tools.
 
 ## Returning Values From Functions
 ---
@@ -87,7 +87,7 @@ console.log(`firstAdd is: ${firstAdd} and secondAdd is ${secondAdd}`)
 
 ## Mini-lab!
 Go to `functions-lab.js` and tackle questions 7 - 9!
-*NOTE* that this section uses a test suite! That's because functions with return values can be tested, but functions that console.log without returning anything can't be tested.
+*NOTE* that this section uses the test suite! That's because functions with return values can be tested, but functions that console.log without returning anything can't be tested.
 
 ## Callback Functions
 
